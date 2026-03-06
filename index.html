@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mustafa Selim Erdal — Portfolio</title>
+  <title>Mustafa Selim Erdal</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=IBM+Plex+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -28,7 +28,6 @@
       overflow-x: hidden;
     }
 
-    /* Grain overlay */
     body::before {
       content: '';
       position: fixed;
@@ -39,7 +38,6 @@
       opacity: 0.4;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -92,7 +90,6 @@
 
     .nav-links a:hover { background: var(--black); color: var(--white); }
 
-    /* HERO */
     .hero {
       margin-top: 52px;
       padding: 80px 64px 64px;
@@ -225,7 +222,6 @@
       margin-top: 4px;
     }
 
-    /* QUICK LINKS BAR */
     .quick-links {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -251,7 +247,6 @@
 
     .arrow-icon { font-size: 16px; transform: rotate(-45deg); display: inline-block; }
 
-    /* SECTIONS */
     .section {
       padding: 72px 64px;
       border-bottom: var(--border);
@@ -278,7 +273,6 @@
       letter-spacing: 2px;
     }
 
-    /* ABOUT */
     .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -330,7 +324,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* SKILLS */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -375,7 +368,6 @@
       font-family: 'Space Mono', monospace;
     }
 
-    /* EDUCATION + EXPERIENCE */
     .timeline {
       display: flex;
       flex-direction: column;
@@ -445,7 +437,6 @@
       color: var(--black);
     }
 
-    /* PROJECTS */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -555,7 +546,6 @@
 
     .project-link:hover { text-decoration: underline; }
 
-    /* CONTACT */
     .contact-section {
       padding: 80px 64px;
     }
@@ -641,7 +631,6 @@
       opacity: 0.5;
     }
 
-    /* ANIMATIONS */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
@@ -653,12 +642,10 @@
     .hero-actions { animation: fadeUp 0.5s ease 0.45s both; }
     .hero-right { animation: fadeUp 0.5s ease 0.3s both; }
 
-    /* SCROLLBAR */
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--white); }
     ::-webkit-scrollbar-thumb { background: var(--black); }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .hero { grid-template-columns: 1fr; padding: 48px 24px; }
       .hero-right { display: none; }
@@ -680,7 +667,6 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-logo">
     <div class="nav-logo-icon">MS</div>
@@ -695,31 +681,31 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-tag">Software Engineering Student</div>
+    <div class="hero-tag">Yazılım Mühendisliği Öğrencisi</div>
     <h1>
       <span>Mustafa</span>
       <span>Selim</span>
-      <span>Erdal.</span>
+      <span>Erdal</span>
     </h1>
     <p class="hero-desc">
-      Kotlin Back-End ve Mobile Development odaklı Yazılım Mühendisliği 3. sınıf öğrencisi. TÜBİTAK 2209-A projesi kapsamında Android veri güvenliği uygulaması geliştiriyor.
+      Android, iOS, Back-End ve Mobile Development odaklı Yazılım Mühendisliği 3. sınıf öğrencisiyim. TÜBİTAK 2209-A projesi kapsamında Android veri güvenliği uygulaması geliştiriyorum.
     </p>
     <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">Projeleri Gör ↘</a>
+      <a href="#projects" class="btn btn-primary">Projelerimi Gör ↘</a>
       <a href="#contact" class="btn btn-outline">İletişime Geç</a>
     </div>
   </div>
   <div class="hero-right">
+    <img src="mselimerdal.jpeg" alt="Mustafa Selim Erdal" style="width:180px; height:180px; object-fit:cover; border: 2px solid #0a0a0a;" />
     <div class="hero-stats">
       <div class="stat-item">
         <span class="stat-num">3+</span>
         <span class="stat-label">Yıl Kod</span>
       </div>
       <div class="stat-item">
-        <span class="stat-num">3</span>
+        <span class="stat-num">5</span>
         <span class="stat-label">Aktif Proje</span>
       </div>
       <div class="stat-item">
@@ -734,7 +720,6 @@
   </div>
 </section>
 
-<!-- QUICK LINKS -->
 <div class="quick-links">
   <a href="#about" class="quick-link-item">Hakkımda <span class="arrow-icon">↗</span></a>
   <a href="#skills" class="quick-link-item">Yetenekler <span class="arrow-icon">↗</span></a>
@@ -742,7 +727,6 @@
   <a href="#contact" class="quick-link-item">İletişim <span class="arrow-icon">↗</span></a>
 </div>
 
-<!-- ABOUT -->
 <section class="section" id="about">
   <div class="section-header">
     <span class="section-num">01 /</span>
@@ -752,29 +736,30 @@
     <div class="about-card">
       <div class="about-card-label">Profil</div>
       <div class="about-card-content">
-        <strong>Kim Olduğum</strong>
+        <strong>Kimim</strong>
         Kotlin Back-End ve Mobile Development alanlarına odaklanan, Ankara Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. TÜBİTAK destekli araştırma projesi yürütüyor, üniversite sosyal medya platformu geliştirme ekibinde aktif görev alıyorum.
       </div>
     </div>
     <div class="about-card">
-      <div class="about-card-label">İlgi Alanları</div>
+      <div class="about-card-label">İlgi Alanlarım</div>
       <div class="about-card-content">
         <strong>Odaklandığım Alanlar</strong>
         <div class="tag-list">
-          <span class="tag">Android Dev</span>
+          <span class="tag">Android Geliştirme</span>
           <span class="tag">Back-End</span>
+          <span class="tag">iOS Geliştirme</span>
           <span class="tag">Veri Güvenliği</span>
-          <span class="tag">Mobile Apps</span>
-          <span class="tag">MVC Architecture</span>
+          <span class="tag">Mobil Uygulamalar</span>
+          <span class="tag">MVC Mimarisi</span>
           <span class="tag">REST API</span>
         </div>
       </div>
     </div>
     <div class="about-card">
-      <div class="about-card-label">Hedefler</div>
+      <div class="about-card-label">Hedeflerim</div>
       <div class="about-card-content">
         <strong>Nereye Gidiyorum</strong>
-        Kotlin ve Android ekosisteminde uzmanlaşarak güvenli, ölçeklenebilir mobil uygulamalar geliştirmek. TÜBİTAK projesini başarıyla tamamlayıp uluslararası alanda yayınlamak.
+      Android ve iOS ekosisteminde uzmanlaşarak güvenli, ölçeklenebilir mobil uygulamalar geliştirmek. TÜBİTAK projesini başarıyla tamamlayıp uluslararası alanda yayınlamak.
         <div class="tag-list">
           <span class="tag">İngilizce</span>
           <span class="tag">İspanyolca</span>
@@ -784,7 +769,6 @@
   </div>
 </section>
 
-<!-- SKILLS -->
 <section class="section" id="skills">
   <div class="section-header">
     <span class="section-num">02 /</span>
@@ -839,7 +823,6 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
 <section class="section" id="education">
   <div class="section-header">
     <span class="section-num">03 /</span>
@@ -869,7 +852,6 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="section" id="experience">
   <div class="section-header">
     <span class="section-num">04 /</span>
@@ -895,7 +877,6 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="section" id="projects">
   <div class="section-header">
     <span class="section-num">05 /</span>
@@ -903,7 +884,6 @@
   </div>
   <div class="projects-grid">
 
-    <!-- Project 1 -->
     <div class="project-card">
       <div class="project-header">
         <div class="project-dots">
@@ -931,7 +911,6 @@
       </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-card">
       <div class="project-header">
         <div class="project-dots">
@@ -959,7 +938,6 @@
       </div>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-card" style="grid-column: span 2; border-right: none;">
       <div class="project-header">
         <div class="project-dots">
@@ -996,7 +974,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="section-header">
     <span class="section-num">06 /</span>
@@ -1051,7 +1028,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span>© 2025 Mustafa Selim Erdal</span>
   <span>Ankara Üniversitesi — Yazılım Mühendisliği</span>
@@ -1059,7 +1035,6 @@
 </footer>
 
 <script>
-  // Skill bar animation on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1072,7 +1047,6 @@
 
   document.querySelectorAll('.skills-grid').forEach(el => observer.observe(el));
 
-  // Fade-in sections
   const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
